@@ -1,0 +1,22 @@
+{
+  "name": "techtree",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A community-edited tech tree of science: what humanity knows, what it depends on, and the open frontier.",
+  "homepage": "https://techtree.earth",
+  "repository": "github:Zelaron/techtree",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "bundle": "node scripts/build.mjs --bundle",
+    "dev": "node scripts/build.mjs && python3 -m http.server 8080 --directory site"
+  },
+  "devDependencies": {
+    "yaml": "2.5.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
